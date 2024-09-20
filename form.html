@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box{
+            background-color: #9a9ff7;
+            border-radius: 8px;
+            padding: 20px;
+            width: 350px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input{
+            border-radius: 3px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            font-size: 15px;
+            width:200px;
+        }
+        input[type=radio]{
+            width:10px;
+        }
+        label{
+            font-size: 20px;
+        }
+        
+        button{
+            font-size: 20px;
+            padding:10px;
+            width:100px;
+            color: antiquewhite;
+            background-color: rgb(50, 50, 226);
+        }
+        body{
+            padding: 50px;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1 >Application Form</h1>
+    <form>
+        <label>First Name:</label><br>
+        <input type="text" id="name"required><br><br>
+        <label>Last Name:</label><br>
+        <input type="text" id="lname"required><br><br>
+        <label>EMAIL-ID:</label><br>
+        <input type="text" id="email" required><br><br>
+        <label>DOB:</label><br>
+        <input type="date" id="date"required><br><br>
+        <label>AGE:</label><br>
+        <input type="number" min="18" max="30" id="age" required><br><br>
+        <label>GENDER:</label><br><br>
+        <label style="font-size: 17px;">MALE</label>
+        <input type="radio" value="m" name="gender" >
+        <label style="font-size: 17px;">FEMALE</label>
+        <input type="radio" value="f" name="gender">
+        <label style="font-size: 17px;">OTHERS</label>
+        <input type="radio" value="o" name="gender"><br><br>
+        <label>CONTACT:</label><br>
+        <input type="tel" name="contact"><br><br><br>
+        <button>SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
